@@ -1,0 +1,93 @@
+.signup {
+  background: linear-gradient(180deg, #E8F4F3 0%, var(--off-white) 100%);
+  padding: 6rem 2rem 8rem;
+}
+
+.signup-intro {
+  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  color: var(--cool-gray);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  border: 2px solid transparent;
+  background-color: white;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  color: var(--charcoal);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--accent-teal);
+  box-shadow: 0 4px 20px rgba(46, 196, 182, 0.15);
+}
+
+.form-group input::placeholder {
+  color: var(--cool-gray);
+  font-weight: 300;
+}
+
+.form-group input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.signup-form .btn {
+  width: 100%;
+  padding: 1.25rem 2rem;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+}
+
+.signup-form .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-message {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.form-message.success {
+  background-color: rgba(46, 196, 182, 0.1);
+  color: var(--accent-teal);
+  border: 1px solid var(--accent-teal);
+}
+
+.form-message.error {
+  background-color: rgba(255, 82, 82, 0.1);
+  color: #ff5252;
+  border: 1px solid #ff5252;
+}
+
+@media (max-width: 768px) {
+  .signup-form {
+    max-width: 100%;
+  }
+}

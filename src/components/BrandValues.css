@@ -1,0 +1,65 @@
+.brand-values {
+  background-color: var(--off-white);
+}
+
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.value-item {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 300;
+  color: var(--accent-teal);
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.value-item:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(46, 196, 182, 0.2);
+  color: #26a499;
+}
+
+.momo-story {
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(46, 196, 182, 0.05) 0%, rgba(46, 196, 182, 0.02) 100%);
+  border-radius: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.momo-story h3 {
+  color: var(--accent-teal);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.momo-story p {
+  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  color: var(--charcoal);
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .values-list {
+    gap: 1rem;
+  }
+  
+  .value-item {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+  }
+}

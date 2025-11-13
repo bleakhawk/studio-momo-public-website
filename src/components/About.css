@@ -1,0 +1,30 @@
+.about {
+  background-color: var(--off-white);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content p {
+  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.about-content strong {
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
+.emphasis {
+  font-style: italic;
+  color: var(--accent-teal);
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem) !important;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: rgba(46, 196, 182, 0.05);
+  border-radius: 12px;
+  border-left: 4px solid var(--accent-teal);
+}
