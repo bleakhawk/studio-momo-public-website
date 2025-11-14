@@ -26,6 +26,7 @@
   object-fit: contain;
   opacity: 0.9;
   margin-bottom: 1rem;
+  filter: brightness(0) invert(1);
 }
 
 .footer-tagline {

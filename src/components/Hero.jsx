@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="section-content">
         <div className="hero-content fade-in-up">
           <div className="logo-container">
-            <img src="/aatma-labs-dark.svg" alt="Aatma Labs" className="logo-image" />
+            <img src="/aatma-labs-light.svg" alt="Aatma Labs" className="logo-image" />
             <h1 className="logo">Studio Momo</h1>
           </div>
           <p className="description">
