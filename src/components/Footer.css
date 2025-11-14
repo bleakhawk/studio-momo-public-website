@@ -1,6 +1,6 @@
 .footer {
-  background-color: var(--charcoal);
-  color: var(--cool-gray);
+  background-color: #1E1E1E;
+  color: #999999;
   padding: 4rem 2rem 2rem;
 }
 
@@ -29,9 +29,11 @@
 }
 
 .footer-tagline {
-  font-size: 0.875rem;
+  font-size: 0.6875rem;
   color: var(--cool-gray);
   margin: 0;
+  line-height: 1.45;
+  letter-spacing: 0.03125em;
 }
 
 .footer-links {
@@ -40,7 +42,8 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.03125em;
 }
 
 .footer-links a {
@@ -64,9 +67,11 @@
 }
 
 .footer-copyright p {
-  font-size: 0.875rem;
+  font-size: 0.6875rem;
   color: #666;
   margin: 0;
+  line-height: 1.45;
+  letter-spacing: 0.03125em;
 }
 
 @media (max-width: 768px) {

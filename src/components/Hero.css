@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #F8F8F8 0%, #E8F4F3 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%);
   position: relative;
   overflow: hidden;
 }
@@ -13,7 +13,7 @@
   position: absolute;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(46, 196, 182, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(74, 158, 255, 0.12) 0%, transparent 70%);
   border-radius: 50%;
   top: -200px;
   right: -200px;
@@ -25,7 +25,7 @@
   position: absolute;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(46, 196, 182, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 201, 201, 0.08) 0%, transparent 70%);
   border-radius: 50%;
   bottom: -150px;
   left: -150px;
@@ -55,34 +55,43 @@
 }
 
 .logo-image {
-  width: clamp(200px, 40vw, 350px);
+  width: clamp(280px, 50vw, 480px);
   height: auto;
   object-fit: contain;
   animation: fadeIn 1s ease-out;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .logo {
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 200;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.5rem, 6vw, 3.563rem);
+  font-weight: 400;
+  letter-spacing: -0.015625em;
   margin-bottom: 0;
+  white-space: nowrap;
+  line-height: 1.12;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .tagline {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 300;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 600;
   color: var(--cool-gray);
   margin-bottom: 2rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
+  line-height: 1.38;
 }
 
 .hero .description {
-  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
   color: var(--cool-gray);
   max-width: 600px;
   margin: 0 auto 3rem;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.03125em;
 }
 
 .hero .btn {

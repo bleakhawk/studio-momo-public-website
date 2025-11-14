@@ -11,46 +11,53 @@
 }
 
 .value-item {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 300;
-  color: var(--accent-teal);
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 400;
+  color: var(--accent-cyan);
   padding: 1rem 2rem;
   background-color: white;
-  border-radius: 50px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s ease;
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
+  line-height: 1.33;
 }
 
 .value-item:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 8px 25px rgba(46, 196, 182, 0.2);
-  color: #26a499;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
+  background: var(--gradient-bg);
+  color: white;
 }
 
 .momo-story {
   margin-top: 4rem;
-  padding: 3rem 2rem;
-  background: linear-gradient(135deg, rgba(46, 196, 182, 0.05) 0%, rgba(46, 196, 182, 0.02) 100%);
-  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, rgba(0, 201, 201, 0.05) 0%, rgba(74, 158, 255, 0.05) 100%);
+  border-radius: 12px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .momo-story h3 {
-  color: var(--accent-teal);
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: clamp(1.125rem, 3vw, 1.375rem);
   font-weight: 400;
   margin-bottom: 1.5rem;
+  line-height: 1.27;
 }
 
 .momo-story p {
-  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
   color: var(--charcoal);
-  font-weight: 300;
-  line-height: 1.8;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.03125em;
 }
 
 @media (max-width: 768px) {

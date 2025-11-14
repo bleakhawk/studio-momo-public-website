@@ -1,5 +1,5 @@
 .features {
-  background: linear-gradient(180deg, var(--off-white) 0%, #E8F4F3 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F5FAFF 100%);
 }
 
 .features-grid {
@@ -11,17 +11,17 @@
 
 .feature-card {
   background-color: white;
-  padding: 2.5rem 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s ease;
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
 .feature-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(46, 196, 182, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
 }
 
 .feature-icon {
@@ -35,24 +35,32 @@
 
 .feature-card h3 {
   color: var(--charcoal);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.009375em;
 }
 
 .feature-card p {
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: var(--cool-gray);
-  line-height: 1.6;
+  line-height: 1.43;
   margin-bottom: 0;
+  letter-spacing: 0.015625em;
+  font-weight: 400;
 }
 
 .features-tagline {
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2.5vw, 1.375rem);
   font-style: italic;
-  color: var(--accent-teal);
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-top: 3rem;
   font-weight: 400;
+  line-height: 1.27;
 }
 
 @media (max-width: 768px) {

@@ -8,23 +8,30 @@
 }
 
 .about-content p {
-  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
-  line-height: 1.9;
-  margin-bottom: 1.5rem;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03125em;
 }
 
 .about-content strong {
   color: var(--charcoal);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .emphasis {
   font-style: italic;
-  color: var(--accent-teal);
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem) !important;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: clamp(1rem, 2.5vw, 1rem) !important;
+  font-weight: 500;
+  line-height: 1.5 !important;
+  letter-spacing: 0.009375em !important;
   margin-top: 2rem;
   padding: 2rem;
-  background-color: rgba(46, 196, 182, 0.05);
+  background-color: rgba(74, 158, 255, 0.05);
   border-radius: 12px;
-  border-left: 4px solid var(--accent-teal);
+  border-left: 4px solid var(--accent-cyan);
 }

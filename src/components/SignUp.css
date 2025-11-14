@@ -1,15 +1,17 @@
 .signup {
-  background: linear-gradient(180deg, #E8F4F3 0%, var(--off-white) 100%);
+  background: linear-gradient(180deg, #F5FAFF 0%, #FFFFFF 100%);
   padding: 6rem 2rem 8rem;
 }
 
 .signup-intro {
-  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
   color: var(--cool-gray);
   margin-bottom: 3rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.5;
+  letter-spacing: 0.03125em;
 }
 
 .signup-form {
@@ -26,20 +28,21 @@
 
 .form-group input {
   width: 100%;
-  padding: 1.25rem 1.5rem;
+  padding: 1rem 1.5rem;
   font-size: 1rem;
   font-family: var(--font-family);
-  border: 2px solid transparent;
+  border: 1px solid #E0E0E0;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 4px;
   transition: all 0.3s ease;
   color: var(--charcoal);
+  letter-spacing: 0.03125em;
 }
 
 .form-group input:focus {
   outline: none;
-  border-color: var(--accent-teal);
-  box-shadow: 0 4px 20px rgba(46, 196, 182, 0.15);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 2px rgba(0, 201, 201, 0.2);
 }
 
 .form-group input::placeholder {
@@ -55,7 +58,7 @@
 .signup-form .btn {
   width: 100%;
   padding: 1.25rem 2rem;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   margin-top: 1rem;
 }
 
@@ -69,15 +72,17 @@
   margin-top: 2rem;
   padding: 1.5rem;
   border-radius: 12px;
-  font-size: 1.125rem;
-  font-weight: 400;
+  font-size: 0.875rem;
+  font-weight: 600;
   animation: fadeIn 0.5s ease-out;
+  line-height: 1.43;
 }
 
 .form-message.success {
-  background-color: rgba(46, 196, 182, 0.1);
-  color: var(--accent-teal);
-  border: 1px solid var(--accent-teal);
+  background-color: rgba(0, 201, 201, 0.1);
+  color: var(--accent-cyan);
+  border: 1px solid var(--accent-cyan);
+  font-weight: 500;
 }
 
 .form-message.error {
