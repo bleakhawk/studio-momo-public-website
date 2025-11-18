@@ -31,7 +31,7 @@ const Hero = () => {
             Reimagines how dance, yoga, and fitness studios run their business — with simplicity and soul.
           </p>
           <a href="#signup" className="btn btn-primary">
-            Join the Waitlist
+            Notify Me
           </a>
         </div>
       </div>

@@ -85,13 +85,13 @@
 }
 
 .hero .description {
-  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   color: var(--cool-gray);
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto 3rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
-  letter-spacing: 0.03125em;
+  letter-spacing: 0;
 }
 
 .hero .btn {

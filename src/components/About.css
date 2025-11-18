@@ -8,10 +8,11 @@
 }
 
 .about-content p {
-  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   line-height: 1.5;
   margin-bottom: 1rem;
-  letter-spacing: 0.03125em;
+  letter-spacing: 0;
+  font-weight: 300;
 }
 
 .about-content strong {
