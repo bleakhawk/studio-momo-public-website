@@ -1,12 +1,30 @@
+import { useEffect, useState } from 'react';
 import './Hero.css';
 
 const Hero = () => {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    // Check system theme preference
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDark(mediaQuery.matches);
+
+    // Listen for theme changes
+    const handler = (e) => setIsDark(e.matches);
+    mediaQuery.addEventListener('change', handler);
+    return () => mediaQuery.removeEventListener('change', handler);
+  }, []);
+
   return (
     <section className="hero">
       <div className="section-content">
         <div className="hero-content fade-in-up">
           <div className="logo-container">
-            <img src="/aatma-labs-light.svg" alt="Aatma Labs" className="logo-image" />
+            <img 
+              src={isDark ? "/aatma-labs-light.svg" : "/aatma-labs-dark.svg"} 
+              alt="Aatma Labs" 
+              className="logo-image" 
+            />
             <h1 className="logo">Studio Momo</h1>
           </div>
           <p className="description">
